@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.header p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+    border-color: #6a11cb;
+}
+
+.input-container button {
+    background: #6a11cb;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.input-container button:hover {
+    background: #5c0fb8;
+}
+
+.todoList {
+    list-style: none;
+    padding: 0;
+}
+
+.todoList li {
+    background: #f7f7f7;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todoList li p {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    color: #333;
+}
+
+.todoList li .btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #777;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.todoList li .btn:hover {
+    color: #6a11cb;
+    transform: scale(1.2);
+}
+
+.todoList li .deleteBtn {
+    color: #e74c3c;
+}
+
+.todoList li .deleteBtn:hover {
+    color: #c0392b;
+}
